@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Api.BOL\Api.BOL.csproj" />
+    <ProjectReference Include="..\Api.DAL\Api.DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="InfrastructureService\IServices\" />
+    <Folder Include="InfrastructureService\Services\" />
+  </ItemGroup>
+
 </Project>
