@@ -1,8 +1,7 @@
-﻿using Api.DAL;
-using Api.DAL.DataContext;
+﻿using Api.DAL.DataContext;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-namespace SMS.DataAccessLayer.InfrastructureDb.Repository
+namespace Api.DAL
 {
     public class GRepository<T> : IGRepository<T> where T : class
     {

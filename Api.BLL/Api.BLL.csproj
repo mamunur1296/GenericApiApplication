@@ -11,9 +11,4 @@
     <ProjectReference Include="..\Api.DAL\Api.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="InfrastructureService\IServices\" />
-    <Folder Include="InfrastructureService\Services\" />
-  </ItemGroup>
-
 </Project>

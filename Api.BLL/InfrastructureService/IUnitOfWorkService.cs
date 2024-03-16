@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using Api.BLL.InfrastructureService.IServices;
 
 namespace Api.BLL.InfrastructureService
 {
     public interface IUnitOfWorkService 
     {
+         ICompanyServices CompanyServices { get; }
+         ITraderServices TraderServices { get; }
+        ITestSerevice TestSerevice { get; }
+
+        // Define Extra methods if This methods applay all App 
     }
 }
