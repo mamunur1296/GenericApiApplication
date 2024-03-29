@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Api.BOL.Models
 {
@@ -24,9 +20,5 @@ namespace Api.BOL.Models
         public DateTime? DeactivatedDate { get; set; }
         public string DeactiveBy { get; set; }
         public string BIN { get; set; }
-
-        // Navigation properties
-        public virtual ICollection<Product> Products { get; set; }
-        public virtual ICollection<Trader> Traders { get; set; }
     }
 }

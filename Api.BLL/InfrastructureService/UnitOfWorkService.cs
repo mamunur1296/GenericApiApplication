@@ -10,16 +10,14 @@ namespace Api.BLL.InfrastructureService
         private readonly IUnitOfWorkDb _unitOfWorkDb;
         public ICompanyServices CompanyServices { get; private set; }
 
-        public ITraderServices TraderServices { get; private set; }
 
-        public ITestSerevice TestSerevice { get; private set; }
+    
 
         public UnitOfWorkService(IUnitOfWorkDb unitOfWorkDb)
         {
             _unitOfWorkDb = unitOfWorkDb;
             CompanyServices = new CompanyServices(unitOfWorkDb);
-            TraderServices = new TraderServices(unitOfWorkDb);
-            TestSerevice = new TestServices(unitOfWorkDb);
+            
         }
 
         // Extand common methods 

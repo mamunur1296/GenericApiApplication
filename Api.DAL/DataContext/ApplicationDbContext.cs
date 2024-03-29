@@ -11,22 +11,8 @@ namespace Api.DAL.DataContext
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-        public DbSet<User> Users { get; set; }
-        public DbSet<DeliveryAddress> DeliveryAddresses { get; set; }
-        public DbSet<Order> Orders { get; set; }
-        public DbSet<ProdReturn> ProdReturn { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<ProductSize> ProductSizes { get; set; }
-        public DbSet<Retailer> Retailers { get; set; }
-        public DbSet<Trader> Traders { get; set; }
-        public DbSet<Valve> valves { get; set; }
-        public DbSet<Test> Tests { get; set; }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<ProductSize>()
-                .Property(p => p.Size)
-                .HasColumnType("decimal(18, 2)"); 
-        }
+        public DbSet<Company> Companys { get; set; }
+
 
     }
 }
